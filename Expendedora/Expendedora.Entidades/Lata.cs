@@ -54,7 +54,34 @@ namespace Expendedora.Entidades
             }
             set
             {
-                _precio = value;
+                if(value>0)
+                {
+                    _precio = value;
+                }
+                else
+                {
+                    throw new Exception("El precio debe ser mayor a 0")
+                }
+                
+            }
+        }
+
+        public double Volumen
+        {
+            get
+            {
+                return _volumen;            
+            }
+            set
+            {
+                if(value>0)
+                {
+                    _volumen=value;
+                }
+                else
+                {
+                    throw new Exception("Ingrese un volumen mayor a 0")
+                }
             }
         }
 
