@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Expendedora.Entidades
+
+namespace CAI_EXPENDEDORA.Entidades
 {
-    class Excepciones
+    class CodigoValidoExcepcion : Exception
     {
+        public CodigoValidoExcepcion() : base("No se encontro el codigo");
+        
+           
     }
 }

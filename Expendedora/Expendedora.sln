@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expendedora", "Expendedora\Expendedora.csproj", "{C20CAAE8-57C0-4893-97DE-FC529EF84FEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAI_EXPENDEDORA", "Expendedora\CAI_EXPENDEDORA.csproj", "{C20CAAE8-57C0-4893-97DE-FC529EF84FEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expendedora.Entidades", "Expendedora.Entidades\Expendedora.Entidades.csproj", "{64F6983C-A751-4C24-A21E-7081A60C13C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAI_EXPENDEDORA.Entidades", "Expendedora.Entidades\CAI_EXPENDEDORA.Entidades.csproj", "{64F6983C-A751-4C24-A21E-7081A60C13C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Expendedora.Entidades
+namespace CAI_EXPENDEDORA.Entidades
 {
-    class Lata
+    public class Lata 
     {
         private string _codigo;
         private string _nombre;
@@ -19,6 +19,10 @@ namespace Expendedora.Entidades
             get 
             {
                 return _codigo;
+            }
+            set
+            {
+                _codigo = value;
             }
         }
         
@@ -60,7 +64,7 @@ namespace Expendedora.Entidades
                 }
                 else
                 {
-                    throw new Exception("El precio debe ser mayor a 0")
+                    throw new Exception("El precio debe ser mayor a 0");
                 }
                 
             }
@@ -90,16 +94,26 @@ namespace Expendedora.Entidades
             return _precio * _volumen;
         }
 
-        public Lata(string Nombre, string Sabor, double Precio)
+        public Lata(string Codigo,string Nombre, string Sabor)
         {
+            this._codigo = Codigo;
+            this._nombre = Nombre;
+            this._sabor = Sabor;  
+        }
+
+        public Lata(string Codigo, string Nombre, string Sabor, double Precio, double Volumen)
+        {
+            this._codigo = Codigo;
             this._nombre = Nombre;
             this._sabor = Sabor;
-            this._precio = Precio;    
+            this._precio = Precio;
+            this._volumen = Volumen;
         }
         public override string ToString()
         {
             return string.Format( this._nombre + "-" +  this._sabor + "-" + "$"+this._precio + "$/L" + GetPrecioPorLitro());
             
         }
+       
     }
 }
